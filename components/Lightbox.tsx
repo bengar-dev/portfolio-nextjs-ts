@@ -49,6 +49,7 @@ const LightBox = ({ func, indexImg, imageArray }: LightBoxProps) => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          alt={imageArray[idx]}
         />
       </div>
     </div>

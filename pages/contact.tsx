@@ -29,7 +29,7 @@ const Contact: NextPage = () => {
           Me contacter
         </h1>
         <p className="w-8/12 text-center mt-2 text-sm">
-          Un projet? Une offre d'emploi ? Dites-moi tout !
+          Un projet? Une offre d&apos;emploi ? Dites-moi tout !
         </p>
         <div className="mt-6 w-8 h-0.5 bg-slate-400"></div>
         <div className="mt-16 w-11/12 flex flex-col md:flex-row md:w-8/12 md:space-x-10 items-center">

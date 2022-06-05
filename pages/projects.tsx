@@ -39,7 +39,7 @@ const Projects: NextPage = () => {
                     <h2 className="flex items-center font-bold"><TbWorld className="mr-2 text-xl text-rose-500"/> Groupomania</h2>
                     <p className="mt-4 text-xs">
                     Projet final lors de ma formation avec OpenClassrooms.<br />
-                    Création d'un réseau social pour une entreprise.
+                    Création d&apos;un réseau social pour une entreprise.
                     </p>
                 </article>
                 </a>
@@ -49,7 +49,7 @@ const Projects: NextPage = () => {
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><FaShoppingCart className="mr-2 text-xl text-orange-400"/> Shopy app</h2>
                     <p className="mt-4 text-xs">
-                    E-commerce application, sans fonctionnalité de paiement. Application qui mets en pratique la gestion d'un panier utilisateur et le processus de validation de commande.
+                    E-commerce application, sans fonctionnalité de paiement. Application qui mets en pratique la gestion d&apos;un panier utilisateur et le processus de validation de commande.
                     </p>
                 </article>
                 </a>
@@ -59,7 +59,7 @@ const Projects: NextPage = () => {
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><FaUsers className="mr-2 text-xl text-cyan-500"/> Users app</h2>
                     <p className="mt-4 text-xs">
-                    Projet fullstack sans base de données de gestion d'utilisateurs/personnes. Ajout d'une personne, modification des informations et suppression de la personne. Possibilité de trier les personnes par leur nom de famille.
+                    Projet fullstack sans base de données de gestion d&apos;utilisateurs/personnes. Ajout d&apos;une personne, modification des informations et suppression de la personne. Possibilité de trier les personnes par leur nom de famille.
                     </p>
                 </article>
                 </a>
