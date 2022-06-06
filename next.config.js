@@ -3,6 +3,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost']
+    domains: ['localhost', 'benoitgar-portfolio.netlify.app']
   }
 }
