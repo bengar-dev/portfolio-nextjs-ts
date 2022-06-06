@@ -1,15 +1,88 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import React, { useState } from "react"
 
 import { Navbar } from "../components/Navbar";
 
 import {GrSend} from "react-icons/gr"
 
+import{ init } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import AlertMsg from "../components/AlertMsg";
+init("user_tFqdGtNDOu1Hg2tj18rvo");
+
+type formProps = {
+  email: string,
+  subject: string,
+  msg: string
+}
+
 const Contact: NextPage = () => {
+
+  const [form, setForm] = useState<formProps>({
+    email: "",
+    subject: "",
+    msg: ""
+  })
+  const [msgAlert, setMsgAlert] = useState("")
+
+  const handleInputs = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    if(e.target.id === "email") setForm({
+      ...form,
+      email: e.target.value
+    })
+    else if(e.target.id === "subject") setForm({
+      ...form,
+      subject: e.target.value
+    })
+    else if(e.target.id === "msg") setForm({
+      ...form,
+      msg: e.target.value
+    })
+  }
+
+  const validEmail = (value:string) => {
+    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value);
+  }
+
+  const sendEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if(form.email === "" || form.subject === "" || form.msg === "") setMsgAlert("Veuillez remplir tous les champs")
+    else {
+      if(!validEmail(form.email)) setMsgAlert("Veuillez vérifier le format de l'email")
+      else {
+        sendFeedback('template_esdl5ni', {
+          email: form.email,
+          subject: form.subject,
+          msg: form.msg
+        })
+      }
+    }
+  }
+
+  const sendFeedback = (templateId: string, variables: any) => {
+    emailjs
+        .send("service_sifndja", templateId, variables)
+        .then((res) => {
+            setForm({
+              email: "",
+              subject: "",
+              msg: ""
+            })
+            setMsgAlert('Votre message a bien été envoyé !')
+            setTimeout(() => {
+              setMsgAlert("")
+            }, 2000)
+        })
+        .catch(
+            (err) => {
+            console.log('erreur')
+            })
+}
+
   return (
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
       <Head>
-        <html lang="fr" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,6 +110,7 @@ const Contact: NextPage = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
+        {msgAlert !== "" && <AlertMsg message={msgAlert}/>}
         <h1 className="p-2 w-8/12 text-center font-bold text-4xl uppercase">
           Me contacter
         </h1>
@@ -48,15 +122,23 @@ const Contact: NextPage = () => {
             <form className="w-full flex flex-col">
                 <label htmlFor="email" className="font-mono uppercase">Email</label>
                 <input 
+                value={form.email}
+                onChange={(e) => handleInputs(e)}
                 className="transition-all duration-200 p-2 outline-none text-slate-900 focus:bg-zinc-100"
                 type="email" name="email" id="email" />
                 <label htmlFor="subject" className="mt-4 font-mono uppercase">Sujet</label>
                 <input 
+                value={form.subject}
+                onChange={(e) => handleInputs(e)}
                 className="transition-all duration-200 p-2 outline-none text-slate-900 focus:bg-zinc-100"
                 type="text" name="subject" id="subject" />
                 <label htmlFor="msg" className="mt-4 font-mono uppercase">Message</label>
-                <textarea id="msg" className="transition-all duration-200 p-2 resize-none h-32 outline-none text-slate-900 focus:bg-zinc-100"></textarea>
+                <textarea 
+                value={form.msg}
+                onChange={(e) => handleInputs(e)}
+                id="msg" className="transition-all duration-200 p-2 resize-none h-32 outline-none text-slate-900 focus:bg-zinc-100"></textarea>
                 <button 
+                onClick={(e) => sendEmail(e)}
                 aria-label="Envoyer"
                 className="transition-all duration-200 mt-2 bg-emerald-400 flex justify-center items-center p-2 border-2 border-emerald-600 hover:bg-emerald-600"
                 type="submit"><GrSend className="text-xl"/></button>
