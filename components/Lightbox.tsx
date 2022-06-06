@@ -43,7 +43,7 @@ const LightBox = ({ func, indexImg, imageArray }: LightBoxProps) => {
         onClick={(e) => handleNextImage(e, "next")}
         className="transition-all text-2xl text-cyan-400 hover:text-white"><FaArrowAltCircleRight /></button>
       </div>
-      <div className="relative w-1/2 h-2/4">
+      <div className="relative w-1/2 h-2/4" data-aos="fade" data-aos-duration="1000">
         <Image
           src={`http://benoitgar-portfolio.netlify.app/assets/${imageArray[idx]}`}
           layout="fill"

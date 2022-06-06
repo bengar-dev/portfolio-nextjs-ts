@@ -43,12 +43,14 @@ const About: NextPage = () => {
         </p>
         <div className="mt-6 w-8 h-0.5 bg-slate-400"></div>
         <div className="mt-16 w-9/12 flex flex-col md:flex-row md:w-8/12 md:space-x-10 items-center">
-          <div className="flex rounded-full overflow-hidden border-2 border-white shadow-lg w-32 h-32">
+          <div className="flex rounded-full overflow-hidden border-2 border-white shadow-lg w-32 h-32"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
             <Image src={ProfilPic} 
             width="200" height="200"
             alt="Photo Benoit Garcia" objectFit="cover" />
           </div>
-          <main className="mt-4 p-4 rounded-lg font-light text-sm shadow-lg w-11/12 flex flex-col bg-slate-800">
+          <main className="mt-4 p-4 rounded-lg font-light text-sm shadow-lg w-11/12 flex flex-col bg-slate-800"
+          data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
             <p className="first-letter:text-cyan-500 first-letter:font-medium">
                 Développeur passionné et autodidacte depuis mon plus jeune âge, j&apos;ai décidé d&apos;entamer ma reconversion professionnelle en aout 2021 après-avoir passé plus de 10 ans dans le secteur du bâtiment.<br /><br />
                 J&apos;ai donc suivi une formation chez <span className="text-purple-400 font-medium">OpenClassrooms</span> où j&apos;ai obtenu mon diplôme de Développeur Web en mars 2022. Formation qui m&apos;a permis de consolider mes connaissances, mais aussi d&apos;apprendre de nouvelles technologies. J&apos;ai pu par exemple découvrir le côté back avec Node.js mais aussi React.js côté front.<br /><br />

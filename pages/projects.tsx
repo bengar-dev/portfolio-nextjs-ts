@@ -46,7 +46,7 @@ const Projects: NextPage = () => {
         <div className="mt-6 w-8 h-0.5 bg-slate-400"></div>
         <div className="mt-16 w-9/12 flex flex-col space-y-4 md:w-6/12 lg:w-5/12 items-center">
             <Link href="/project/groupomania">
-                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2">
+                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><TbWorld className="mr-2 text-xl text-rose-500"/> Groupomania</h2>
                     <p className="mt-4 text-xs">
@@ -57,7 +57,8 @@ const Projects: NextPage = () => {
                 </a>
             </Link>
             <Link href="/project/shopy">
-                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2">
+                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><FaShoppingCart className="mr-2 text-xl text-orange-400"/> Shopy app</h2>
                     <p className="mt-4 text-xs">
@@ -67,7 +68,8 @@ const Projects: NextPage = () => {
                 </a>
             </Link>
             <Link href="/project/usersapp">
-                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2">
+                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><FaUsers className="mr-2 text-xl text-cyan-500"/> Users app</h2>
                     <p className="mt-4 text-xs">
