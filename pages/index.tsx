@@ -13,6 +13,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
       <Head>
+        <html lang="fr" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,27 +38,27 @@ const Home: NextPage = () => {
         <ul className="mt-6 flex space-x-2">
           <li className="flex items-center">
             <Link href="https://github.com/benysserp">
-              <a target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-stone-600 hover:text-white p-2 rounded-full"><FaGithub /></a>
+              <a aria-label="GitHub" target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-stone-600 hover:text-white p-2 rounded-full"><FaGithub /></a>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="https://twitter.com/PressyDev">
-              <a target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-cyan-500 hover:text-white p-2 rounded-full"><FaTwitter /></a>
+              <a aria-label="Twitter" target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-cyan-500 hover:text-white p-2 rounded-full"><FaTwitter /></a>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="https://www.twitch.tv/pressycw">
-              <a target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-purple-500 hover:text-white p-2 rounded-full"><FaTwitch /></a>
+              <a aria-label="Twitch" target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-purple-500 hover:text-white p-2 rounded-full"><FaTwitch /></a>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="https://www.linkedin.com/in/benoit-gar/">
-              <a target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-sky-600 hover:text-white p-2 rounded-full"><FaLinkedin /></a>
+              <a aria-label="Linkedin" target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-sky-600 hover:text-white p-2 rounded-full"><FaLinkedin /></a>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="mailto:benoitgar.pro@gmail.com">
-              <a target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-rose-500 hover:text-white p-2 rounded-full"><MdOutlineAlternateEmail /></a>
+              <a aria-label="Email" target="_blank" className="transition-all duration-200 bg-slate-200 text-slate-900 hover:bg-rose-500 hover:text-white p-2 rounded-full"><MdOutlineAlternateEmail /></a>
             </Link>
           </li>
         </ul>

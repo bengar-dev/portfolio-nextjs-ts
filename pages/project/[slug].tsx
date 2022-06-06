@@ -143,6 +143,7 @@ const Details: NextPage = () => {
             ))}
           </ul>
           <Head>
+            <html lang="fr" />
             <meta charSet="utf-8" />
             <link rel="icon" href="/favicon.ico" />
             <meta

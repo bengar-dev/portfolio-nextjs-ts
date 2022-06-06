@@ -9,6 +9,7 @@ const Contact: NextPage = () => {
   return (
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
       <Head>
+        <html lang="fr" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,13 +39,14 @@ const Contact: NextPage = () => {
                 <input 
                 className="transition-all duration-200 p-2 outline-none text-slate-900 focus:bg-zinc-100"
                 type="email" name="email" id="email" />
-                <label htmlFor="email" className="mt-4 font-mono uppercase">Sujet</label>
+                <label htmlFor="subject" className="mt-4 font-mono uppercase">Sujet</label>
                 <input 
                 className="transition-all duration-200 p-2 outline-none text-slate-900 focus:bg-zinc-100"
                 type="text" name="subject" id="subject" />
                 <label htmlFor="msg" className="mt-4 font-mono uppercase">Message</label>
                 <textarea id="msg" className="transition-all duration-200 p-2 resize-none h-32 outline-none text-slate-900 focus:bg-zinc-100"></textarea>
                 <button 
+                aria-label="Envoyer"
                 className="transition-all duration-200 mt-2 bg-emerald-400 flex justify-center items-center p-2 border-2 border-emerald-600 hover:bg-emerald-600"
                 type="submit"><GrSend className="text-xl"/></button>
             </form>

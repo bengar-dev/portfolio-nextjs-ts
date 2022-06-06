@@ -27,6 +27,7 @@ export const Navbar: NextComponentType = () => {
   return (
     <nav className="transition-all duration-500 absolute top-0 z-10 -left-28 min-h-screen w-40 flex flex-col p-2">
       <button
+        aria-label="Burger menu"
         onClick={(e) => toggleMenu(e)}
         className="mr-0 ml-auto text-4xl text-cyan-500 hover:text-rose-500"
       >

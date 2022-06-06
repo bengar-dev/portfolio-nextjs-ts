@@ -13,6 +13,7 @@ const About: NextPage = () => {
   return (
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
       <Head>
+        <html lang="fr" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,7 +43,7 @@ const About: NextPage = () => {
                 J&apos;ai donc suivi une formation chez <span className="text-purple-400 font-medium">OpenClassrooms</span> où j&apos;ai obtenu mon diplôme de Développeur Web en mars 2022. Formation qui m&apos;a permis de consolider mes connaissances, mais aussi d&apos;apprendre de nouvelles technologies. J&apos;ai pu par exemple découvrir le côté back avec Node.js mais aussi React.js côté front.<br /><br />
                 Aujourd&apos;hui, j&apos;ai eu l&apos;opportunité de poursuivre mon apprentissage en alternance en suivant une nouvelle formation de <span className="font-medium">Concepteur Développeur d&apos;applications</span> à l&apos;AFPA de Montpellier et du coup faire mes premiers pas dans le monde professionnel du développement avec <span className="font-medium text-sky-400">Kaliop</span>, une entreprise montpelliéraine spécialisée dans la digitalisation d&apos;entreprise.
             </p>
-            <Link href="https://benoitgarcia.fr/ftp/CV_BENOIT.pdf">
+            <Link href="http://s737853516.onlinehome.fr/ftp/CV_BENOIT.pdf">
                 <a target="_blank" className="flex items-center mt-2 mr-0 ml-auto transition-all duration-200 bg-slate-900 hover:bg-cyan-500 hover:text-slate-900 p-2 font-medium w-max rounded-xl"><FaCloudDownloadAlt className="mr-2"/>Télécharger mon CV</a>
             </Link>
           </main>
