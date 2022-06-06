@@ -89,7 +89,7 @@ const Skills: NextPage = () => {
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="1800">SQL / MySQL</li>
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="1900">MongoDB</li>
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="2000">VS Code</li>
-                    <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="21000">Git</li>
+                    <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="2100">Git</li>
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="2200">Photoshop / After-effect</li>
                 </ul>
             </article>
