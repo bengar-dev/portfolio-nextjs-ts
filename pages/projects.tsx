@@ -61,7 +61,7 @@ const Projects: NextPage = () => {
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><FaShoppingCart className="mr-2 text-xl text-orange-400"/> Shopy app</h2>
                     <p className="mt-4 text-xs">
-                    E-commerce application, sans fonctionnalité de paiement. Application qui mets en pratique la gestion d&apos;un panier utilisateur et le processus de validation de commande.
+                    E-commerce application, sans fonctionnalité de paiement. Application qui met en pratique la gestion d&apos;un panier utilisateur et le processus de validation de commande.
                     </p>
                 </article>
                 </a>

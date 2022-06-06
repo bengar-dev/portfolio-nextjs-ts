@@ -43,37 +43,37 @@ const Skills: NextPage = () => {
           <main className="mt-16 w-9/12 flex flex-col space-y-4 md:w-8/12 md:space-x-10 items-center">
             <article className="flex items-center" data-aos="fade-left" data-aos-duration='1000'>
                 <FaReact className="w-1/3 text-6xl text-cyan-500"/>
-                <p className="w-2/3 text-xs">
+                <p className="w-2/3 text-sm">
                 <span className="font-medium text-cyan-500">React.js</span> est une librairie JavaScript Open Source qui vise à simplifier le développement d&apos;interfaces visuelles. Développé par Facebook et commercialisé en 2013, il gère certaines des applications web les plus utilisées, notamment Facebook, Instagram ou encore Netflix.
                 </p>
             </article>
             <article className="flex items-center" data-aos="fade-right" data-aos-duration='1000'>
-                <p className="w-2/3 text-xs">
+                <p className="w-2/3 text-sm">
                 <span className="font-medium text-cyan-500">tailwind.css</span> est un framework CSS &apos;Utility-First&apos; permettant aux développeurs de personnaliser totalement et simplement le design de leur site ou application web. Il est possible de créer un design interface au sein même du fichier HTML.
                 </p>
                 <SiTailwindcss className="w-1/3 text-6xl text-sky-600"/>
             </article>
             <article className="flex items-center" data-aos="fade-left" data-aos-duration='1000'>
                 <FaNodeJs className="w-1/3 text-6xl text-emerald-500"/>
-                <p className="w-2/3 text-xs">
-                <span className="font-medium text-emerald-500">Node.js</span> est une plateforme construite sur le moteur JavaScript V8 de Chrome qui permet de développer des applications en utilisant du JavaScript. On l&apos;utilisera nottament pour construire le back-end de notre application ou notre site web.
+                <p className="w-2/3 text-sm">
+                <span className="font-medium text-emerald-500">Node.js</span> est une plateforme construite sur le moteur JavaScript V8 de Chrome qui permet de développer des applications en utilisant du JavaScript. On l&apos;utilisera notamment pour construire le back-end de notre application ou notre site web.
                 </p>
             </article>
             <article className="flex items-center" data-aos="fade-right" data-aos-duration='1000'>
-                <p className="w-2/3 text-xs">
-                <span className="font-medium text-white">fastify</span> est un framework axé la meilleure expérience de développement avec le moins de surcharge et une architecture de plug-in puissante, inspirée de Hapi et Express. Il s&apos;agit de l&apos;un des frameworks Node.js les plus rapide.
+                <p className="w-2/3 text-sm">
+                <span className="font-medium text-white">fastify</span> est un framework axé sur l&apos;expérience de développement avec le moins de surcharge et une architecture de plug-in puissante, inspirée de Hapi et Express. Il s&apos;agit de l&apos;un des frameworks Node.js les plus rapides.
                 </p>
                 <SiFastify className="w-1/3 text-6xl text-white"/>
             </article>
             <article className="flex items-center" data-aos="fade-left" data-aos-duration='1000'>
                 <GrMysql className="w-1/3 text-6xl text-orange-500"/>
-                <p className="w-2/3 text-xs">
+                <p className="w-2/3 text-sm">
                 <span className="font-medium text-orange-500">SQL</span> est un langage informatique normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL permet de rechercher, d&apos;ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles.
                 </p>
             </article>
             <article className="w-full flex flex-col">
                 <h2 className="font-medium">Mes compétences en vracs</h2>
-                <ul className="mt-1 pb-10 flex flex-wrap justify-center space-x-2 text-xs" data-aos="fade-up" data-aos-duration='1000' data-aos-delay="500">
+                <ul className="mt-1 pb-10 flex flex-wrap justify-center space-x-2 text-sm" data-aos="fade-up" data-aos-duration='1000' data-aos-delay="500">
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="600">JavaScript</li>
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="700">React.js</li>
                     <li className="p-1 bg-slate-800 rounded-lg mt-2" data-aos="flip-up" data-aos-duration='1000' data-aos-delay="800">Redux</li>
