@@ -18,6 +18,17 @@ const Contact: NextPage = () => {
           name="description"
           content="Benoit Garcia, développeur front-end junior React.js sur Montpellier"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.benoitgarcia.dev/" />
+        <meta property="og:title" content="Benoit Garcia - Développeur front-end junior React.js" />
+        <meta property="og:description" content="Benoit Garcia, développeur front-end junior React.js sur Montpellier" />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.benoitgarcia.dev/" />
+        <meta property="twitter:title" content="Benoit Garcia - Développeur front-end junior React.js" />
+        <meta property="twitter:description" content="Benoit Garcia, développeur front-end junior React.js sur Montpellier" />
+        <meta property="twitter:image" content=""></meta>
         <title>A-propos - Benoit Garcia Developpeur front-end junior</title>
       </Head>
       <Navbar />
