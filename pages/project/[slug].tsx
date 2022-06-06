@@ -122,7 +122,7 @@ const Details: NextPage = () => {
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
       {toggle && <LightBox indexImg={indexImg} imageArray={project.images} func={handleLightBox}/>}
       <Link href="/projects">
-        <a className="flex uppercase text-white hover:text-cyan-500 font-mono font-bold absolute top-6 right-4">
+        <a className="flex uppercase text-white hover:text-cyan-500 font-mono font-bold absolute z-40 top-6 right-4">
           <MdOutlineArrowBackIosNew className="text-xl text-white mr-2" />{" "}
           Retour
         </a>
@@ -130,7 +130,7 @@ const Details: NextPage = () => {
       <Navbar />
       {Object.keys(project).length > 0 && (
         <section
-          className="flex flex-col items-center text-slate-100 "
+          className="flex w-full md:w-10/12 flex-col items-center text-slate-100 "
           data-aos="fade-up"
           data-aos-duration="1000"
         >
