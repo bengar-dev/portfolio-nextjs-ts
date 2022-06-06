@@ -200,7 +200,7 @@ const Details: NextPage = () => {
                   onClick={(e) => handleLightBox(e, index)}
                   >
                     <Image
-                      src={`http://localhost:3000/assets/${el}`}
+                      src={`http://benoitgar-portfolio.netlify.app/assets/${el}`}
                       width="300"
                       height="300"
                       objectFit="cover"

@@ -45,7 +45,7 @@ const LightBox = ({ func, indexImg, imageArray }: LightBoxProps) => {
       </div>
       <div className="relative w-1/2 h-2/4">
         <Image
-          src={`http://localhost:3001/assets/${imageArray[idx]}`}
+          src={`http://benoitgar-portfolio.netlify.app/assets/${imageArray[idx]}`}
           layout="fill"
           objectFit="contain"
           quality={100}
