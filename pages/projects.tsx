@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 
 import {FaShoppingCart, FaUsers} from "react-icons/fa"
 import {TbWorld} from "react-icons/tb"
+import {MdChecklist} from "react-icons/md"
 
 const Projects: NextPage = () => {
   return (
@@ -73,6 +74,17 @@ const Projects: NextPage = () => {
                     <h2 className="flex items-center font-bold"><FaUsers className="mr-2 text-xl text-cyan-500"/> Users app</h2>
                     <p className="mt-4 text-xs">
                     Projet fullstack sans base de données de gestion d&apos;utilisateurs/personnes. Ajout d&apos;une personne, modification des informations et suppression de la personne. Possibilité de trier les personnes par leur nom de famille.
+                    </p>
+                </article>
+                </a>
+            </Link>
+            <Link href="/project/todofe">
+                <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                <article className="flex flex-col">
+                    <h2 className="flex items-center font-bold"><MdChecklist className="mr-2 text-xl text-red-500"/> Todolist</h2>
+                    <p className="mt-4 text-xs">
+                    Projet challenge Frontendmentor, le but ici était de créer une Todolist en React. Cela m&apos;a permis de m&apos;entraîner sur le changement de states en React notamment.
                     </p>
                 </article>
                 </a>

@@ -113,7 +113,26 @@ const Details: NextPage = () => {
           live: "",
         });
       }
-    } else if (router.query.slug !== "groupomania" || "shopy" || "usersapp") {
+    }
+    else if (router.query.slug === "todofe") {
+      if (project.title === "") {
+        setProject({
+          title: "Todolist React",
+          content: `Petit projet sur la création d'une todolist en React. Ici l'objectif était de se familiariser avec les states React.`,
+          fonctionalities: [
+            "Ajout d'une chose à faire",
+            "Changer le statut d'une chose",
+            "Suppression d'une chose",
+            "Filtrer la liste en fonction si les choses ont été faites ou pas",
+          ],
+          array: ["React.js", "tailwind.css"],
+          images: ["todo_capt_1.png"],
+          github: "https://github.com/benysserp/FE-mentor-todo",
+          live: "https://fem-todo-react.netlify.app/",
+        });
+      }
+    }
+    else if (router.query.slug !== "groupomania" || "shopy" || "usersapp" || "todofe") {
       router.push("/");
     }
   });
