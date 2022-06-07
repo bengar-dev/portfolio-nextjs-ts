@@ -49,11 +49,11 @@ const Details: NextPage = () => {
       if (project.title === "") {
         setProject({
           title: "Groupomania",
-          content: `Projet final lors de ma formation chez OpenClassrooms. Le but était de créer un réseau social pour une entreprise fictive Groupomania. On avait quelques obligations pour les technologies à savoir : Utiliser un framework JavaScript côté front-end, mon choix c'est porté sur React. Puis côté back-end l'utilisation de base de donnée SQL était obligatoire.`,
+          content: `Projet final lors de ma formation chez OpenClassrooms. Le but était de créer un réseau social pour une entreprise fictive Groupomania. On avait quelques obligations pour les technologies à savoir : Utiliser un framework JavaScript côté front-end, mon choix c'est porté sur React. Puis côté back-end l'utilisation de base de données SQL était obligatoire.`,
           fonctionalities: [
             "Création de compte utilisateur",
             "Modification de son profil",
-            "Supression du compte",
+            "Suppression du compte",
             "Ajout de nouvelle publication",
             "Editer/Supprimer ses propres publications",
             "Ajout de commentaire",
@@ -78,7 +78,7 @@ const Details: NextPage = () => {
       if (project.title === "") {
         setProject({
           title: "Shopy app",
-          content: `Projet perso qui met en pratique des fonctionalitées d'un site e-commerce. La fonctionalité de paiement est "fake". Le but était ici de s'amuser avec le localStorage pour tout ce qui est gestion des produits dans un panier.`,
+          content: `Projet perso qui met en pratique des fonctionalités d'un site e-commerce. La fonctionnalité de paiement est "fake". Le but était ici de s'amuser avec le localStorage pour tout ce qui est gestion des produits dans un panier.`,
           fonctionalities: [
             "Affichage des produits depuis un fichier data",
             "Ajout d'un produit dans son panier",
@@ -99,7 +99,7 @@ const Details: NextPage = () => {
       if (project.title === "") {
         setProject({
           title: "Users app",
-          content: `Projet perso fullstack qui ma permi de mettre en pratique fastify côté back-end et de jouer avec les hooks de React.js.`,
+          content: `Projet perso fullstack qui m'a permis de mettre en pratique fastify côté back-end et de jouer avec les hooks de React.js.`,
           fonctionalities: [
             "Affichage des utilisateurs depuis un appel API",
             "Ajout d'un utilisateur",
