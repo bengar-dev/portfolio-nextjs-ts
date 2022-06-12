@@ -34,15 +34,18 @@ const Details: NextPage = () => {
     github: "",
     live: "",
   });
-  const [toggle, setToggle] = useState(false)
-  const [indexImg, setIndexImg] = useState(0)
+  const [toggle, setToggle] = useState(false);
+  const [indexImg, setIndexImg] = useState(0);
 
-  const handleLightBox = (e: React.MouseEvent<HTMLButtonElement>, index: number) => {
-    setIndexImg(index)
+  const handleLightBox = (
+    e: React.MouseEvent<HTMLButtonElement>,
+    index: number
+  ) => {
+    setIndexImg(index);
     setTimeout(() => {
-      setToggle(!toggle)
-    }, 250)
-  }
+      setToggle(!toggle);
+    }, 250);
+  };
 
   useEffect(() => {
     if (router.query.slug === "groupomania") {
@@ -113,8 +116,7 @@ const Details: NextPage = () => {
           live: "",
         });
       }
-    }
-    else if (router.query.slug === "todofe") {
+    } else if (router.query.slug === "todofe") {
       if (project.title === "") {
         setProject({
           title: "Todolist React",
@@ -131,15 +133,25 @@ const Details: NextPage = () => {
           live: "https://fem-todo-react.netlify.app/",
         });
       }
-    }
-    else if (router.query.slug !== "groupomania" || "shopy" || "usersapp" || "todofe") {
+    } else if (
+      router.query.slug !== "groupomania" ||
+      "shopy" ||
+      "usersapp" ||
+      "todofe"
+    ) {
       router.push("/");
     }
   });
 
   return (
     <div className="relative bg-slate-900 min-h-screen flex items-center justify-center overflow-hidden">
-      {toggle && <LightBox indexImg={indexImg} imageArray={project.images} func={handleLightBox}/>}
+      {toggle && (
+        <LightBox
+          indexImg={indexImg}
+          imageArray={project.images}
+          func={handleLightBox}
+        />
+      )}
       <Link href="/projects">
         <a className="flex uppercase text-white hover:text-cyan-500 font-mono font-bold absolute z-40 top-6 right-4">
           <MdOutlineArrowBackIosNew className="text-xl text-white mr-2" />{" "}
@@ -156,7 +168,10 @@ const Details: NextPage = () => {
           <h1 className="p-2 font-bold text-4xl uppercase">{project.title}</h1>
           <ul className="w-9/12 flex justify-center flex-wrap space-x-2 mt-2 text-sm">
             {project.array.map((el: string, index: number) => (
-              <li key={el+index} className="mt-2 bg-sky-800 p-1 rounded text-xs">
+              <li
+                key={el + index}
+                className="mt-2 bg-sky-800 p-1 rounded text-xs"
+              >
                 {el}
               </li>
             ))}
@@ -174,40 +189,57 @@ const Details: NextPage = () => {
               content="Benoit Garcia, développeur front-end junior React.js sur Montpellier"
             />
             <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.benoitgarcia.dev/" />
-        <meta property="og:title" content="Benoit Garcia - Développeur front-end junior React.js" />
-        <meta property="og:description" content="Benoit Garcia, développeur front-end junior React.js sur Montpellier" />
-        <meta property="og:image" content="" />
+            <meta property="og:url" content="https://www.benoitgarcia.dev/" />
+            <meta
+              property="og:title"
+              content="Benoit Garcia - Développeur front-end junior React.js"
+            />
+            <meta
+              property="og:description"
+              content="Benoit Garcia, développeur front-end junior React.js sur Montpellier"
+            />
+            <meta property="og:image" content="" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.benoitgarcia.dev/" />
-        <meta property="twitter:title" content="Benoit Garcia - Développeur front-end junior React.js" />
-        <meta property="twitter:description" content="Benoit Garcia, développeur front-end junior React.js sur Montpellier" />
-        <meta property="twitter:image" content=""></meta>
-            <title>{project.title} - Benoit Garcia Developpeur front-end junior</title>
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta
+              property="twitter:url"
+              content="https://www.benoitgarcia.dev/"
+            />
+            <meta
+              property="twitter:title"
+              content="Benoit Garcia - Développeur front-end junior React.js"
+            />
+            <meta
+              property="twitter:description"
+              content="Benoit Garcia, développeur front-end junior React.js sur Montpellier"
+            />
+            <meta property="twitter:image" content=""></meta>
+            <title>
+              {project.title} - Benoit Garcia Developpeur front-end junior
+            </title>
           </Head>
           <div className="mt-6 w-8 h-0.5 bg-slate-400"></div>
           {project.github !== "" && (
             <div className="flex space-x-2">
-            <Link href={project.github}>
-              <a
-                target="_blank"
-                className="transition-all duration-200 flex items-center mt-2 bg-stone-400 p-1 text-sm rounded text-stone-800 hover:scale-105"
-              >
-                <FaGithub className="mr-1 text-lg" /> GitHub
-              </a>
-            </Link>
-            {project.live !== "" && (
-              <Link href={project.live}>
+              <Link href={project.github}>
                 <a
                   target="_blank"
-                  className="transition-all duration-200 flex items-center mt-2 bg-cyan-200 p-1 text-sm rounded text-cyan-800 hover:scale-105"
+                  className="transition-all duration-200 flex items-center mt-2 bg-stone-400 p-1 text-sm rounded text-stone-800 hover:scale-105"
                 >
-                  <GoBrowser className="mr-1 text-lg" /> Live version
+                  <FaGithub className="mr-1 text-lg" /> GitHub
                 </a>
               </Link>
-            )}
-          </div>
+              {project.live !== "" && (
+                <Link href={project.live}>
+                  <a
+                    target="_blank"
+                    className="transition-all duration-200 flex items-center mt-2 bg-cyan-200 p-1 text-sm rounded text-cyan-800 hover:scale-105"
+                  >
+                    <GoBrowser className="mr-1 text-lg" /> Live version
+                  </a>
+                </Link>
+              )}
+            </div>
           )}
           <main className="mt-8 w-9/12 flex flex-col md:w-6/12 md:space-x-10 items-center">
             <p className="text-sm">{project.content}</p>
@@ -225,10 +257,11 @@ const Details: NextPage = () => {
             </h2>
             <ul className="flex space-x-4">
               {project.images.map((el: string, index: number) => (
-                <li key={el+index} className="border rounded-lg overflow-hidden">
-                  <button
-                  onClick={(e) => handleLightBox(e, index)}
-                  >
+                <li
+                  key={el + index}
+                  className="border rounded-lg overflow-hidden"
+                >
+                  <button onClick={(e) => handleLightBox(e, index)}>
                     <Image
                       src={`http://benoitgar-portfolio.netlify.app/assets/${el}`}
                       width="300"

@@ -80,7 +80,7 @@ const Projects: NextPage = () => {
             </Link>
             <Link href="/project/todofe">
                 <a className="transition-all w-full border hover:bg-slate-800 rounded-lg p-2"
-                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                 <article className="flex flex-col">
                     <h2 className="flex items-center font-bold"><MdChecklist className="mr-2 text-xl text-red-500"/> Todolist</h2>
                     <p className="mt-4 text-xs">
