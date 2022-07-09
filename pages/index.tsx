@@ -68,7 +68,7 @@ const Home: NextPage = () => {
         </p>
         <ul className="mt-6 flex space-x-2">
           <li className="flex items-center">
-            <Link href="https://github.com/benysserp">
+            <Link href="https://github.com/bengar-dev">
               <a
                 aria-label="GitHub"
                 target="_blank"

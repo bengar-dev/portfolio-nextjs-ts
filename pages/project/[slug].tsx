@@ -73,7 +73,7 @@ const Details: NextPage = () => {
             "MySQL",
           ],
           images: ["groupo_capt_1.png", "groupo_capt_2.png"],
-          github: "https://github.com/benysserp/Groupo_refacto",
+          github: "https://github.com/bengar-dev/Groupo_refacto",
           live: "https://www.youtube.com/watch?v=NHQ1HCI_xtI",
         });
       }
@@ -94,7 +94,7 @@ const Details: NextPage = () => {
           ],
           array: ["React.js", "tailwind.css"],
           images: ["shopy_capt_1.png", "shopy_capt_2.png", "shopy_capt_3.png"],
-          github: "https://github.com/benysserp/shopy-app",
+          github: "https://github.com/bengar-dev/shopy-app",
           live: "https://shopy-app-react.netlify.app/",
         });
       }
@@ -112,7 +112,7 @@ const Details: NextPage = () => {
           ],
           array: ["React.js", "tailwind.css", "Node.js", "fastify"],
           images: ["users_capt_1.png", "users_capt_2.png"],
-          github: "https://github.com/benysserp/users-app",
+          github: "https://github.com/bengar-dev/users-app",
           live: "",
         });
       }
@@ -129,7 +129,7 @@ const Details: NextPage = () => {
           ],
           array: ["React.js", "tailwind.css"],
           images: ["todo_capt_1.png"],
-          github: "https://github.com/benysserp/FE-mentor-todo",
+          github: "https://github.com/bengar-dev/FE-mentor-todo",
           live: "https://fem-todo-react.netlify.app/",
         });
       }
