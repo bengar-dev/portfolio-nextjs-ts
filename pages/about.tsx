@@ -1,11 +1,13 @@
 import { NextPage } from "next";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link"
 import Head from "next/head"
 import { Navbar } from "../components/Navbar";
 
 import {FaCloudDownloadAlt} from "react-icons/fa"
+import {FcSelfServiceKiosk, FcGraduationCap, FcBriefcase, FcReading} from 'react-icons/fc'
+import {AiFillSafetyCertificate} from 'react-icons/ai'
+import {GiPodiumWinner} from 'react-icons/gi'
 import ProfilPic from "../public/assets/Photo_profil.jpeg";
 
 const About: NextPage = () => {
@@ -59,6 +61,21 @@ const About: NextPage = () => {
                 <a target="_blank" className="flex items-center mt-2 mr-0 ml-auto transition-all duration-200 bg-slate-900 hover:bg-cyan-500 hover:text-slate-900 p-2 font-medium w-max rounded-xl"><FaCloudDownloadAlt className="mr-2"/>Télécharger mon CV</a>
             </Link>
           </main>
+        </div>
+        <div className="mt-8 w-9/12 flex flex-col items-center">
+          <h2 className="text-center font-medium text-slate-300">Mon histoire en quelques dates</h2>
+          <ul className="mt-6 flex flex-col space-y-1 text-sm">
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-cyan-400 text-black font-medium p-1">06/2022</span> <FcBriefcase className="hidden md:flex"/> <p className="p-1 md:p-0 text-center">Alternance chez <span className="font-bold">Kaliop</span> en tant que Développeur Fullstack - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-yellow-400 text-black font-medium p-1">06/2022</span> <FcReading className="hidden md:flex" /> <p className="p-1 md:p-0 text-center">Formation Concepteur Développeur d'Applications à l'AFPA - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-orange-400 text-black font-medium p-1">06/2022</span> <GiPodiumWinner className="hidden md:flex text-yellow-500"/> <p className="p-1 md:p-0 text-center underline hover:no-underline hover:text-cyan-400"><Link href="https://github.com/bengar-dev/front-hackaton"><a target="_blank">Vainqueur hackathon 2022 par Pôle-emploi</a></Link> <span className="italic"></span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-rose-400 text-black font-medium p-1">03/2022</span> <FcGraduationCap className="hidden md:flex" /> <p className="p-1 md:p-0 text-center underline hover:no-underline hover:text-cyan-400"><Link href="http://s737853516.onlinehome.fr/ftp/OC-devweb.pdf"><a target="_blank">Titre professionel niv5 (Bac +2/3) - Développeur web</a></Link> <span className="italic"></span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-purple-400 text-black font-medium p-1">02/2022</span> <AiFillSafetyCertificate className="hidden md:flex text-cyan-500"/> <p className="p-1 md:p-0 text-center underline hover:no-underline hover:text-cyan-400"><Link href="https://www.freecodecamp.org/certification/benysserp/javascript-algorithms-and-data-structures"><a target="_blank">Obtention certificat JavaScript FreeCodeCamp</a></Link>  - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-yellow-400 text-black font-medium p-1">11/2021</span> <FcReading className="hidden md:flex"/> <p className="p-1 md:p-0 text-center">Formation Développeur web chez OpenClassrooms - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-cyan-400 text-black font-medium p-1">06/2011</span> <FcBriefcase className="hidden md:flex" /> <p className="p-1 md:p-0 text-center">Technico-commercial CALCES 34 - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-rose-400 text-black font-medium p-1">09/2010</span> <FcGraduationCap className="hidden md:flex" /> <p className="p-1 md:p-0 text-center">EF International school of english - <span className="italic">New-York, USA</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-rose-400 text-black font-medium p-1">06/2009</span> <FcGraduationCap className="hidden md:flex" /> <p className="p-1 md:p-0 text-center">Baccalauréat STI Génie Electronique - <span className="italic">Montpellier, France</span></p></li>
+            <li className="flex flex-col md:flex-row items-center space-x-2"><span className="w-full md:w-20 text-center bg-emerald-400 text-black font-medium p-1">06/2004</span> <FcSelfServiceKiosk className="hidden md:flex" /> <p className="p-1 md:p-0 text-center">Première ligne de code en HTML</p></li>
+          </ul>
         </div>
       </section>
     </div>
